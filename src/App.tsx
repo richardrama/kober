@@ -7,7 +7,7 @@ import Contact from "./components/contact"
 
 const App = () => {
   return (
-    <div className='font-poppins text-blue'>
+    <div className='font-poppins text-blue overflow-x-hidden'>
       <Navbar />
       <Home />
       <About />
