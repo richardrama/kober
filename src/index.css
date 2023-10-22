@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.circle {
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+}
+
+.square {
+    content: '';
+}
+
+input[type=text] {
+    border-bottom: 2px solid #1E1E1E;
+    background: transparent;
+    font-weight: 600;
+}
+
+input[type=text]::placeholder {
+    color: #1E1E1E;
+}
+
+@media (max-width: 640px) {
+    .navBar {
+        position: absolute;
+        background-color: #eeebe1;
+        width: 100%;
+        top: -500%;
+        transition: all ease-in-out 0.5s;
+        z-index: 10;
+    }
+
+    .navBar.active {
+        position: absolute;
+        width: 100%;
+        background-color: #eeebe1;
+        top: 70%;
+        transition: all ease-in-out 0.5s;
+    }
+}
